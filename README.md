@@ -14,6 +14,12 @@ The tesseract_ocr.py script can be used to extract text from image files. Tesser
       1. Supported file formats: .bmp, .dib, .exr, .hdr, .jpeg, .jpg, .jpe, .jp2, .png, .webp, .pbm, .pic, .pgm, .ppm .pxm, .pnm, .pfm, .ras, .sr, .tiff, .tif
   1. Run the script, output will be printed to the console.
   #### Example Output
+  1. *Text detection with output.*  
+  <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/tesseract1.png" alt="Example 1" width="400"/> <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/tesseract2.png" alt="Example 1 Console"/>
+  1. *Text detection with output.*  
+  <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/tesseract3.png" alt="Example 2" width="400"/> <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/tesseract4.png" alt="Example 2 Console"/>
+  1. *Text detection with output. Lower quality results in poor detection.*  
+  <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/tesseract5.png" alt="Example 2" width="400"/> <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/tesseract6.png" alt="Example 2 Console"/>
   
 ## Single Object Recognition
 There are several scripts (inceptionv3.py, resnet.py, vggnet16.py, vggnet19.py, xception.py) that use various models to identify the primary object in an image. Each script uses a pretrained model for the identification. The highest confidence result is added to the displayed original image and the five highest confidence results are output to the console. These methods will download the pretrained models from the internet when used for the first time. These models can be large (~500MB) but once the model has been downloaded once it will not need to be re-downloaded.
