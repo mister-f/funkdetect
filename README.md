@@ -36,14 +36,21 @@ There are several scripts (inceptionv3.py, resnet.py, vggnet16.py, vggnet19.py, 
   1. Run the script, top 5 confidence detections will be printed to the console and the image will be displayed with the top result added.
       1. If running the first time, the model will automatically download for the given method. This download only hapens once.
   #### Example Output
-  1. *Model comparison (click images to enlarge)*
+  1. *Representative console output*
+  <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/objectrec.png" alt="Single Object Console"/>
+  
+  2. *Model comparison (click images to enlarge)*
 
  | InceptionV3 | ResNet-50 | VGGNet-16 | VGGNet-19 | Xception |
  | --- | --- | --- | --- | --- |
  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep1.png' alt='Inception #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet1.png' alt='ResNet-50 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-1.png' alt='VGGNet-16 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-1.png' alt='VGGNet-19 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep1.png' alt='Xception #1'/> |
+ | cheetah - 95.36% | cheetah - 99.98% | cheetah - 95.61% | cheetah - 99.49% | cheetah - 95.55% |
  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep2.png' alt='Inception #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet2.png' alt='ResNet-50 #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-2.png' alt='VGGNet-16 #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-2.png' alt='VGGNet-19 #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep2.png' alt='Xception #2'/> |
+ | lesser_panda - 90.98% | lesser_panda - 99.74% | lesser_panda - 99.99% | lesser_panda - 99.99% | lesser_panda - 93.25% |
  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep3.png' alt='Inception #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet3.png' alt='ResNet-50 #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-3.png' alt='VGGNet-16 #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-3.png' alt='VGGNet-19 #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep3.png' alt='Xception #3'/> |
+ | hotdog - 99.02% | hotdog - 99.86% | hotdog - 86.65% | hotdog - 77.31% | hotdog - 99.86% |
  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep4.png' alt='Inception #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet4.png' alt='ResNet-50 #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-4.png' alt='VGGNet-16 #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-4.png' alt='VGGNet-19 #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep4.png' alt='Xception #4'/> |
+ | tape_player - 53.52% | cassette_player - 49.9% | CD_player - 27.28% | cassette_player - 32.05% | tape_player - 68.29% |
 
 ## Multi Object Recognition (Image and Video)
 There are several models represented for determining multiple objects in a scene. MobileNet-SSD is the fastest method, but also has lower accuracy and only detects 20 classes of objects. Mask R-CNN can be used to obtain masking information for detected objects and detects 90 object classes. It is much slower however and mroe difficult to use with video. The YOLO models have high accuracy and can detect 80 object classes. The Tiny-YOLO model can also be used with has faster detection but sacrifices accuracy. Output for each script displays picture or video with bounding boxes surrounding objects (or object masks for Mask R-CNN) along with listed confidences. Detected objects and confidences are also listed as console output.
@@ -64,7 +71,10 @@ There are several models represented for determining multiple objects in a scene
   1. Make sure that the correct file names/directories are used for the model wights and configurations in the 'maskrcnn', 'mobilenetssd', or 'yolo' variables
   1. Run the script, detections will be printed to the console and the image or video will be displayed with bounding boxes or masks. Press 'q' to exit out of any video windows.
   #### Example Output
-  1. *Image comparison (click images to enlarge)*
+  1. *Representative console output*
+  <img src="https://github.com/mister-f/funkdetect/blob/main/images/readme/multiobj.png" alt="Multi Object Console"/>
+  
+  2. *Image comparison (click images to enlarge)*
   
   | Mask R-CNN | MobileNet-SSD | YOLOv4 |
   | --- | --- | --- |
@@ -72,17 +82,17 @@ There are several models represented for determining multiple objects in a scene
   | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask2.png' alt='Mask R-CNN #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet2.png' alt='MobileNet-SSD #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo2.png' alt='YOLOv4 #2'/> |
   | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask3.png' alt='Mask R-CNN #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet3.png' alt='MobileNet-SSD #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo3.png' alt='YOLOv4 #31'/> |
   | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask4.png' alt='Mask R-CNN #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet4.png' alt='MobileNet-SSD #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo4.png' alt='YOLOv4 #4'/> |
-  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask5.png' alt='Mask R-CNN #5'/> |  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo5.png' alt='YOLOv4 #5'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask5.png' alt='Mask R-CNN #5'/> | *Unrecognized MobileNet Classes* | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo5.png' alt='YOLOv4 #5'/> |
   | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask6.png' alt='Mask R-CNN #6'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet6.png' alt='MobileNet-SSD #6'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo6.png' alt='YOLOv4 #6'/> |
-  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask7.png' alt='Mask R-CNN #7'/> |  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo7.png' alt='YOLOv4 #7'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask7.png' alt='Mask R-CNN #7'/> | *Unrecognized MobileNet Classes* | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo7.png' alt='YOLOv4 #7'/> |
 
-  2. *Real-time video comparison*
+  3. *Real-time video comparison*
   
   | Mask R-CNN | MobileNet-SSD | YOLOv4 |
   | --- | --- | --- |
   | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/maskrcnnrealtime.gif' alt='Mask R-CNN Real-time'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenetrealtime.gif' alt='MobileNet-SSD Real-time'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolorealtime.gif' alt='YOLOv4 Real-time'/> |
   
-  3. *Saved video comparison*
+  4. *Saved video comparison*
   
   | Mask R-CNN | MobileNet-SSD | YOLOv4 |
   | --- | --- | --- |
