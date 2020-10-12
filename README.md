@@ -40,7 +40,7 @@ There are several scripts (inceptionv3.py, resnet.py, vggnet16.py, vggnet19.py, 
 
  | InceptionV3 | ResNet-50 | VGGNet-16 | VGGNet-19 | Xception |
  | --- | --- | --- | --- | --- |
- | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep1.png' alt='Inception #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet1.png' alt='ResNet-50 #1' width="200"/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-1.png' alt='VGGNet-16 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-1.png' alt='VGGNet-19 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep1.png' alt='Xception #1'/> |
+ | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep1.png' alt='Inception #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet1.png' alt='ResNet-50 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-1.png' alt='VGGNet-16 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-1.png' alt='VGGNet-19 #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep1.png' alt='Xception #1'/> |
  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep2.png' alt='Inception #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet2.png' alt='ResNet-50 #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-2.png' alt='VGGNet-16 #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-2.png' alt='VGGNet-19 #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep2.png' alt='Xception #2'/> |
  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep3.png' alt='Inception #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet3.png' alt='ResNet-50 #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-3.png' alt='VGGNet-16 #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-3.png' alt='VGGNet-19 #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep3.png' alt='Xception #3'/> |
  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep4.png' alt='Inception #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/resnet4.png' alt='ResNet-50 #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg16-4.png' alt='VGGNet-16 #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/vgg19-4.png' alt='VGGNet-19 #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/xcep4.png' alt='Xception #4'/> |
@@ -64,4 +64,26 @@ There are several models represented for determining multiple objects in a scene
   1. Make sure that the correct file names/directories are used for the model wights and configurations in the 'maskrcnn', 'mobilenetssd', or 'yolo' variables
   1. Run the script, detections will be printed to the console and the image or video will be displayed with bounding boxes or masks. Press 'q' to exit out of any video windows.
   #### Example Output
+  1. *Image comparison (click images to enlarge)*
   
+  | Mask R-CNN | MobileNet-SSD | YOLOv4 |
+  | --- | --- | --- |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask1.png' alt='Mask R-CNN #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet1.png' alt='MobileNet-SSD #1'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo1.png' alt='YOLOv4 #1'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask2.png' alt='Mask R-CNN #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet2.png' alt='MobileNet-SSD #2'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo2.png' alt='YOLOv4 #2'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask3.png' alt='Mask R-CNN #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet3.png' alt='MobileNet-SSD #3'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo3.png' alt='YOLOv4 #31'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask4.png' alt='Mask R-CNN #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet4.png' alt='MobileNet-SSD #4'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo4.png' alt='YOLOv4 #4'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask5.png' alt='Mask R-CNN #5'/> |  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo5.png' alt='YOLOv4 #5'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask6.png' alt='Mask R-CNN #6'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenet6.png' alt='MobileNet-SSD #6'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo6.png' alt='YOLOv4 #6'/> |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask7.png' alt='Mask R-CNN #7'/> |  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo7.png' alt='YOLOv4 #7'/> |
+
+  2. *Real-time video comparison*
+  
+  | Mask R-CNN | MobileNet-SSD | YOLOv4 |
+  | --- | --- | --- |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/maskrcnnrealtime.gif' alt='Mask R-CNN Real-time'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenetrealtime.gif' alt='MobileNet-SSD Real-time'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolorealtime.gif' alt='YOLOv4 Real-time'/> |
+  
+  3. *Saved video comparison*
+  
+  | Mask R-CNN | MobileNet-SSD | YOLOv4 |
+  | --- | --- | --- |
+  | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/maskrcnnsaved.gif' alt='Mask R-CNN Saved Video'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenetsaved.gif' alt='MobileNet-SSD Saved Video'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolosaved.gif' alt='YOLOv4 Saved Video'/> |
