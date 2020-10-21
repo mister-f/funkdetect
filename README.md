@@ -1,6 +1,12 @@
 # funkdetect
 Funkdetect is a small collection of python scripts that can perform OCR (optical character recognition) and object recognition in still images, saved video, streaming video.
 
+| <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mask3.png' alt='Mask R-CNN Example'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/yolo4.png' alt='YOLOv4 Example'/> |
+| :---: | :---: |
+| **Object Masking** | **Multi-Object Detection** |
+| <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/mobilenetrealtime.gif' alt='MobileNet-SSD Real-time'/> | <img src='https://github.com/mister-f/funkdetect/blob/main/images/readme/incep2.png' alt='Inception Example'/> |
+| **Streaming Video Object Recognition** | **Single Object Detection** |
+
 ## Tesseract OCR
 The tesseract_ocr.py script can be used to extract text from image files. Tesseract works best with structured text, so handwritten images are less likely to yield accurate results. The captured text is output to the console. 
   #### Dependencies/Libraries
